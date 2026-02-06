@@ -3,9 +3,9 @@
 This log tracks significant actions taken by Newt on the EXE-004 machine.
 
 ## 2026-02-06
-- **13:30** - Updated `ASSESSMENT_ENGINE.py` to v1.1. Now handles the full 7-point questionnaire logic including specific weighting for manual hours and AI usage.
-- **13:25** - Wrote and pushed `ASSESSMENT_ENGINE.py` v1.0. 
-- **13:17** - Officially "Locked" the newlens Lens asset.
+- **14:09** - Codified the new "Model Hierarchy" in `MODEL_HIERARCHY.md`, establishing a 7-tier fallback system from Sonnet 4.5 down to local workstation models.
+- **14:03** - Created `INDEX_MOCKUP.html` to visualize the new homepage structure and brand direction.
+
 - **13:02** - Triggered 3 brighter iterations of the "Lens" asset in various high-key environments.
 - **12:57** - Generated `FRAMER_BUILD_GUIDE.md` and updated `EXECUTIVE_DASHBOARD.md`.
 - **12:55** - Drafted full website copy in `WEBSITE_COPY.md` covering all 3 pillars and About section.
