@@ -18,6 +18,7 @@
 
 ## 📝 Recent Task History
 
+- [x] **2026-02-06 11:57** - Completed Draft v2 (Three Pillars approach).
 - [x] **2026-02-06 11:51** - Completed Draft v1 of the new Homepage.
 - [x] **2026-02-06 11:41** - Created full comprehensive content backup of old site.
 - [x] **2026-02-06 11:34** - Successfully linked and pushed to GitHub `newlens-uk/newlens-v2`.
