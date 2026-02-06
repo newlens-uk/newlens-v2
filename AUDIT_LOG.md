@@ -3,8 +3,10 @@
 This log tracks significant actions taken by Newt on the EXE-004 machine.
 
 ## 2026-02-06
-- **14:15** - Generated `ASSESSMENT_WORKFLOW_N8N.json` (the logic core for the lead magnet) and `SITE_STRUCTURE.md` (the full multi-page blueprint).
-- **14:09** - Codified the new "Model Hierarchy" in `MODEL_HIERARCHY.md`.
+- **15:15** - Neural Bridge established! Successfully linked EXE-004 (Newt) to EXE-002 (Workstation) via Tailscale. Tier 5 Local-Heavy model is now active.
+- **14:52** - Generated `ASSESSMENT_REPORT_TEMPLATE.md`, the 500-word bespoke review format for leads.
+- **14:50** - Triggered "Automation Hero" image generation with Sudbury-specific DNA specs.
+- **14:15** - Generated `ASSESSMENT_WORKFLOW_N8N.json` and `SITE_STRUCTURE.md`.
 
 - **13:02** - Triggered 3 brighter iterations of the "Lens" asset in various high-key environments.
 - **12:57** - Generated `FRAMER_BUILD_GUIDE.md` and updated `EXECUTIVE_DASHBOARD.md`.

@@ -13,8 +13,8 @@
 | **2 (Deep Logic)** | `anthropic/claude-opus-4-5` | Complex business logic and mission-critical architecture. |
 | **3 (Reliability)** | `google/gemini-3-pro` | Stable secondary reasoning agent. |
 | **4 (Long-Context)** | `anthropic/claude-haiku-4-5` | Large file processing and background summarization. |
-| **5 (Local-Heavy)** | `local/exe-002-workstation` | High-privacy tasks and rate-limit bypass (DeepSeek/Llama). |
-| **6 (Local-Core)** | `local/exe-004-newt` | Emergency recovery / Offline survival (Small local model). |
+| **5 (Local-Heavy)** | `local/exe-002-workstation` | **READY FOR HANDSHAKE** (Llama 3.1 8B Q5_K_M). |
+| **6 (Local-Core)** | `local/exe-004-newt` | **ACTIVE** (Llama 3.1 8B Q4). |
 
 ---
 
