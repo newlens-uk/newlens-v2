@@ -1,4 +1,4 @@
-# newlens technical blueprint v1.0
+# newlens technical blueprint v1.1
 **Date:** 2026-02-06
 **Project:** newlens.uk Website v2 Rebuild
 
@@ -10,36 +10,34 @@
 | **Data Clarity** | BI, Reporting, SQL, and Salesforce expertise. | Request a Data Audit |
 | **AI Empowerment** | Training, workshops, and adoption frameworks. | Contact for Pricing |
 | **About** | Mat's 20-year background (Corporate depth, SME focus). | View LinkedIn |
-| **Blog** | Thought leadership, AI tips, local SME success stories. | Subscribe |
+| **Case Studies** | Tangible examples of automation & ROI. | Read More |
 
-## 2. Tech Stack Recommendations
-- **Hosting:** **Framer** or **Webflow** (Recommended). Faster and more modern than Squarespace, allowing easier integration with custom logic. 
-- **Domain:** `newlens.uk` (already owned).
-- **Backend (The "Brains"):** **n8n** or **Python** (running on EXE-004) to handle the Questionnaire logic.
-- **CRM:** **HubSpot** (connected via API).
+## 2. Automation Architecture (The newlens Standard)
+Every automation built by newlens follows these core principles:
+- **Language:** Python (Backend logic).
+- **Web Framework:** Flask (For API endpoints & lightweight portals).
+- **Orchestration:** **n8n** (Connecting services & managing workflow logic).
+- **Reliability:** Built-in monitoring, clear logging, and robust error handling.
+- **Hosting:** Locally on EXE-004 or cloud-native depending on client needs.
 
 ## 3. The "AI Assessment" Logic Flow
-This is the heart of the "Automation-First" lead magnet.
-
-1. **Submission:** Client completes a 5-question form on the newlens site.
-2. **Trigger:** Webhook sends data to an **n8n workflow** on EXE-004.
-3. **Processing:** The data is passed to **Newt (LLM)** with a specific "Consultant" prompt.
-4. **Output:** I generate a structured "AI Readiness Review" (PDF or Email).
-5. **Action:** 
-   - **Lead Created:** Data automatically pushed to **HubSpot**.
-   - **Delivery:** Custom review sent to the client via email.
-   - **Notification:** Mat gets a Telegram alert that a high-value lead is ready.
+1. **Submission:** Client completes a form on the newlens site.
+2. **Trigger:** Webhook to **Python/Flask** endpoint.
+3. **Orchestration:** **n8n** manages the flow between the API and the AI model.
+4. **Processing:** The data is passed to **Newt (LLM)**.
+5. **Outcome:** 
+   - **HubSpot:** New lead created/updated.
+   - **Delivery:** Custom PDF Review sent to client.
+   - **Alert:** Mat notified via Telegram.
 
 ## 4. Visual Strategy
-- **Core Hero Art:** The "Final Blend" (Lens + Data Flow).
-- **Section Variants:** Unique variations of the core art for each Pillar:
-  - *Automation:* Lens focusing on gear/cog-like data flows.
-  - *Data Clarity:* Lens focusing on structured grid/charts.
-  - *AI Empowerment:* Lens focusing on a human-like neural network.
+- **Style:** Abstract, modern data flows based on **Variant C**.
+- **Colors:** Deep Navy (#003366) and Forest Green (#006633).
+- **Current Options:** C1 (Organic), C2 (Geometric), C3 (High-speed), C4 (Neural).
 
 ---
 
 ## 📅 Next Steps
-- [ ] Finalise Core Hero Image (Blend of Original + Variant C).
-- [ ] Draft Detailed "Automation" Service Copy.
-- [ ] Map out specific HubSpot API requirements.
+- [ ] Finalise visual choice from C1-C4.
+- [ ] Draft "Automation" section copy using the Flask/Python/n8n technical narrative.
+- [ ] Design Case Study template (replacing Blogs).
