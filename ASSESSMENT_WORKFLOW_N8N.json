@@ -1,0 +1,64 @@
+{
+  "name": "newlens AI Assessment Triage",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "newlens-assessment",
+        "options": {}
+      },
+      "name": "Webhook: Framer Form",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "sheetId": "ENTER_YOUR_SHEET_ID_HERE",
+        "range": "A:H",
+        "options": {}
+      },
+      "name": "Google Sheets: Log Response",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "model": "anthropic/claude-sonnet-4-5",
+        "prompt": "={{$node[\"Webhook: Framer Form\"].json[\"body\"]}}",
+        "systemPrompt": "You are Newt, the Senior Consultant for newlens. Use the provided 7-point assessment data to write a professional, encouraging 500-word 'AI Readiness Review'. Focus on ROI and a pragmatic Step 1."
+      },
+      "name": "Newt: Generate Review",
+      "type": "n8n-nodes-base.openAI",
+      "typeVersion": 1,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "resource": "contact",
+        "email": "={{$node[\"Webhook: Framer Form\"].json[\"body\"][\"email\"]}}",
+        "additionalFields": {
+          "firstName": "={{$node[\"Webhook: Framer Form\"].json[\"body\"][\"name\"]}}",
+          "company": "={{$node[\"Webhook: Framer Form\"].json[\"body\"][\"company\"]}}"
+        }
+      },
+      "name": "HubSpot: Update Contact",
+      "type": "n8n-nodes-base.hubspot",
+      "typeVersion": 1,
+      "position": [850, 300]
+    }
+  ],
+  "connections": {
+    "Webhook: Framer Form": {
+      "main": [[{ "node": "Google Sheets: Log Response", "type": "main", "index": 0 }]]
+    },
+    "Google Sheets: Log Response": {
+      "main": [[{ "node": "Newt: Generate Review", "type": "main", "index": 0 }]]
+    },
+    "Newt: Generate Review": {
+      "main": [[{ "node": "HubSpot: Update Contact", "type": "main", "index": 0 }]]
+    }
+  }
+}

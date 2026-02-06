@@ -3,8 +3,8 @@
 This log tracks significant actions taken by Newt on the EXE-004 machine.
 
 ## 2026-02-06
-- **14:09** - Codified the new "Model Hierarchy" in `MODEL_HIERARCHY.md`, establishing a 7-tier fallback system from Sonnet 4.5 down to local workstation models.
-- **14:03** - Created `INDEX_MOCKUP.html` to visualize the new homepage structure and brand direction.
+- **14:15** - Generated `ASSESSMENT_WORKFLOW_N8N.json` (the logic core for the lead magnet) and `SITE_STRUCTURE.md` (the full multi-page blueprint).
+- **14:09** - Codified the new "Model Hierarchy" in `MODEL_HIERARCHY.md`.
 
 - **13:02** - Triggered 3 brighter iterations of the "Lens" asset in various high-key environments.
 - **12:57** - Generated `FRAMER_BUILD_GUIDE.md` and updated `EXECUTIVE_DASHBOARD.md`.
