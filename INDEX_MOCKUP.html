@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newlens | Data Clarity & Workflow Automation</title>
+    <style>
+        :root {
+            --navy: #003366;
+            --green: #006633;
+            --white: #ffffff;
+            --grey: #22313F;
+            --light-grey: #F4F7F9;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--grey);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--navy);
+            letter-spacing: -1px;
+        }
+
+        .logo span {
+            color: var(--green);
+        }
+
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: var(--grey);
+            font-weight: 500;
+        }
+
+        .hero {
+            padding: 100px 50px;
+            display: flex;
+            align-items: center;
+            background: var(--light-grey);
+            min-height: 60vh;
+        }
+
+        .hero-content {
+            flex: 1;
+            padding-right: 50px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            color: var(--navy);
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .hero-image {
+            flex: 1;
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: var(--navy);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .pillars {
+            padding: 100px 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .pillar-card {
+            padding: 40px;
+            border-radius: 15px;
+            background: var(--white);
+            border: 1px solid #eee;
+            transition: border-color 0.3s;
+        }
+
+        .pillar-card:hover {
+            border-color: var(--green);
+        }
+
+        .pillar-card h3 {
+            color: var(--green);
+            margin-top: 0;
+        }
+
+        .assessment-section {
+            background: var(--navy);
+            color: white;
+            padding: 100px 50px;
+            text-align: center;
+        }
+
+        .assessment-section h2 {
+            font-size: 2.5rem;
+        }
+
+        .assessment-box {
+            max-width: 800px;
+            margin: 40px auto;
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">new<span>lens</span></div>
+    <nav>
+        <a href="#automation">Automation</a>
+        <a href="#data">Data Clarity</a>
+        <a href="#ai">AI Empowerment</a>
+        <a href="#about">About</a>
+        <a href="#assessment" class="btn" style="padding: 10px 20px; margin-left: 20px;">Free Assessment</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Data Clarity.<br>Workflow Efficiency.<br>AI-Powered Growth.</h1>
+        <p>Bridging the gap between SME data and business goals. We design, deploy, and manage custom automations tailored for your success.</p>
+        <a href="#assessment" class="btn">Start Your AI Assessment</a>
+    </div>
+    <div class="hero-image">
+        <!-- This is where our 'Lens DNA' Hero 1 would go -->
+        <div style="width: 100%; height: 400px; background: #ddd; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-style: italic; color: #666;">
+            [Premium Lens Hero 1 Image]
+        </div>
+    </div>
+</section>
+
+<section class="pillars">
+    <div class="pillar-card">
+        <h3>01. Workflow Automation</h3>
+        <p>Stop doing the manual work. We build intelligent lead triage, CRM syncing, and custom Python/n8n orchestration that works while you sleep.</p>
+    </div>
+    <div class="pillar-card">
+        <h3>02. Data Clarity & BI</h3>
+        <p>Make data make sense. 20+ years of expertise in reporting audits, SQL, and Salesforce CRM Analytics applied to your business.</p>
+    </div>
+    <div class="pillar-card">
+        <h3>03. AI Empowerment</h3>
+        <p>Future-proof your team. Safe, pragmatic AI adoption workshops that focus on real-world ROI, not hype.</p>
+    </div>
+</section>
+
+<section id="assessment" class="assessment-section">
+    <h2>Is your business AI-Ready?</h2>
+    <p>Take our 2-minute assessment and receive a custom 500-word Readiness Review from Newt.</p>
+    <div class="assessment-box">
+        <p><em>[Interactive Questionnaire Component - 7 Points]</em></p>
+        <button class="btn" style="background: var(--green);">Begin Assessment</button>
+    </div>
+</section>
+
+</body>
+</html>
